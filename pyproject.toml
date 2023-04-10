@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "rassilka-tg"
+version = "0.1.0"
+description = ""
+authors = ["maks <makselizarev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rassilka_tg"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
