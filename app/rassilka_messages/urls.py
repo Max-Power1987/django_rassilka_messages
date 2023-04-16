@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import send_message, writer
+from . import views
+from .views import get_context_data
 
 urlpatterns = [
-    path('', send_message),
-    path('', writer)
+    path('', get_context_data )
+
 ]

@@ -1,14 +1,15 @@
 from telethon import TelegramClient, sync
 from telethon.tl.functions.contacts import ImportContactsRequest, DeleteContactsRequest, GetContactIDsRequest
 from telethon.tl.types import InputPhoneContact
+from .Config import API_id, API_hash, Phone_number
 
 
 class Tg_sender:
     def __init__(self, **kwargs):
-        self.api_id = Config.API_id
-        self.api_hash = Config.API_hash
-        self.client = TelegramClient('sender_messagi', api_id=self.api_id, api_hash=self.api_hash).start(Config.Phone_number)
-        print(api_id)
+        self.api_id = API_id
+        self.api_hash = API_hash
+        self.client = TelegramClient('sender_messagi', api_id=self.api_id, api_hash=self.api_hash).start(Phone_number)
+        #print(api_id)
 
     def send_to_user(self, user, text):
     

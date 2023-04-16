@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rassilka_messages',
-    'tg_bot'
+    'rassilka_messages'
 ]
 
 MIDDLEWARE = [
