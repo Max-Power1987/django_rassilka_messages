@@ -1,5 +1,5 @@
 from socket import if_nameindex
-from Config import API_hash, API_id, Phone_number
+from rassilka_messages.Config import API_hash, API_id, Phone_number
 from telethon.sync import TelegramClient
 from telethon.tl.functions.contacts import ImportContactsRequest, DeleteContactsRequest, GetContactIDsRequest
 from telethon.tl.types import InputPhoneContact
